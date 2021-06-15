@@ -23,5 +23,14 @@ public class EngineTest {
 
         assertEquals("X232",engine.getEngineNo());
     }
+    @Test
+    public void canGetEngineSize(){
 
+        assertEquals(2,engine.getEngineSize());
+    }
+    @Test
+    public void canGetEngineFuelType(){
+
+        assertEquals(EngineType.TWOLITERDIESEL.fuelType,engine.getFuelType());
+    }
 }
